@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLink AI - 智能编程助手</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #1a237e 0%, #3f51b5 100%);
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 20px 0;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2196f3;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2196f3;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #2196f3, #21cbf3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #2196f3;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(33, 150, 243, 0.3);
+        }
+
+        .features {
+            padding: 80px 0;
+            background: rgba(255,255,255,0.05);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            color: #2196f3;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="container">
+        <div class="logo">CodeLink AI</div>
+        <ul class="nav-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#features">功能</a></li>
+            <li><a href="#about">关于</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero container">
+        <h1>智能编程，从此开始</h1>
+        <p>CodeLink AI 是你的专属编程助手，让代码编写变得更加高效和有趣</p>
+        <a href="#" class="cta-button">立即体验</a>
+    </section>
+
+    <section class="features container">
+        <h2 style="text-align: center; font-size: 36px; margin-bottom: 20px;">核心功能</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>智能代码生成</h3>
+                <p>基于AI技术，快速生成高质量代码片段</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>代码审查</h3>
+                <p>自动检测代码问题，提供优化建议</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3>学习指导</h3>
+                <p>个性化编程学习路径和实时答疑</p>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
